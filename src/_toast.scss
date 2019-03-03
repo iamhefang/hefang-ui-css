@@ -3,7 +3,7 @@
 @import "functions";
 
 .#{$prefix}toast {
-  position: absolute;
+  position: fixed;
   padding: .4rem .8rem;
   background: rgba(0, 0, 0, .8);
   color: white;

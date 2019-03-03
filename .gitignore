@@ -1,0 +1,6 @@
+*.tgz
+*.map
+*.css
+*.html
+*.iml
+.idea/

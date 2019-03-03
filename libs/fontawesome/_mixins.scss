@@ -1,6 +1,5 @@
 // Mixins
 // --------------------------
-@import "variables";
 
 @mixin fa-icon {
   -webkit-font-smoothing: antialiased;
@@ -22,6 +21,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)";
   transform: scale($horiz, $vert);
 }
+
 
 // Only display content to screen readers. A la Bootstrap 4.
 //
