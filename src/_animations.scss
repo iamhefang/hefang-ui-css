@@ -24,3 +24,12 @@
     opacity: 0;
   }
 }
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
