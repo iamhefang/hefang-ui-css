@@ -3,11 +3,23 @@
 
 .#{$prefix}input {
   border: thin solid $border-color;
-  padding: .4rem .8rem;
+  padding: 0 6px;
   @include box-sizing(border-box);
   @include border-radius($border-radius);
   @include transition(all .35s);
   margin: .1rem;
+  height: $input-height-default;
+  line-height: $input-height-default;
+
+  &[data-size='small'] {
+    height: $input-height-small;
+    line-height: $input-height-small;
+  }
+
+  &[data-size='large'] {
+    height: $input-height-large;
+    line-height: $input-height-large;
+  }
 
   &:focus {
     @include box-shadow(0 0 0 0.2rem rgba(0, 123, 255, .25));
