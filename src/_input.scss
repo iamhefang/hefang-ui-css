@@ -7,7 +7,7 @@
   @include box-sizing(border-box);
   @include border-radius($border-radius);
   @include transition(all .35s);
-  margin: .1rem;
+  margin: 2px;
   height: $input-height-default;
   line-height: $input-height-default;
 
