@@ -3,7 +3,8 @@
 
 .#{$prefix}input {
   border: thin solid $border-color;
-  padding: 0 6px;
+  padding: 0 10px;
+  display: inline-block;
   @include box-sizing(border-box);
   @include border-radius($border-radius);
   @include transition(all .35s);
@@ -45,6 +46,10 @@
         height: 2rem;
         line-height: 2rem;
       }
+    }
+    textarea.#{$prefix}input, div.#{$prefix}input {
+      line-height: 1.5;
+      height: auto;
     }
   }
 }

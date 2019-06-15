@@ -1,0 +1,51 @@
+@import "variables";
+@import "../libs/prefixes";
+
+.#{$prefix}tooltip[data-tooltip] {
+  position: relative;
+  $color: rgba(0, 0, 0, 0.7);
+
+  &:after, &:before {
+    position: absolute;
+    left: 50%;
+    //opacity: 0;
+    transition: all .35s;
+    transform: translateX(-50%) scale(0);
+    z-index: 20;
+    top: 50%;
+  }
+
+  &:hover {
+    &:after, &:before {
+      transform: translateX(-50%) scale(1);
+    }
+
+    &:after {
+      top: calc(100% + 10px);
+    }
+
+    &:before {
+      top: 100%;
+    }
+  }
+
+  //内容
+  &:after {
+    content: attr(data-tooltip);
+    background: $color;
+    width: max-content;
+    max-width: 230px;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  &:before {
+    content: ' ';
+    border: {
+      bottom: 10px solid $color;
+      right: 6px solid transparent;
+      left: 6px solid transparent;
+    }
+  }
+}

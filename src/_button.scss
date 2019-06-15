@@ -7,13 +7,16 @@
   @include transition(background .2s);
   border: none;
   background: #ececec;
-  padding: 0 5px;
+  padding: 0 10px;
+  display: inline-block;
+  text-decoration: none;
 
   cursor: pointer;
   outline-offset: -3px;
   margin: .1rem;
   height: $input-height-default;
   line-height: $input-height-default;
+
   &[data-size='small'] {
     height: $input-height-small;
     line-height: $input-height-small;
