@@ -1,0 +1,17 @@
+@import "../libs/prefixes";
+@import "variables";
+
+.#{$prefix}tag {
+  display: inline-block;
+  border: thin solid $border-color;
+  border-radius: 4px;
+  font-size: 90%;
+  padding: 0 3px;
+  margin: 2px 3px;
+
+  &-remove {
+    &:hover {
+      color: red;
+    }
+  }
+}

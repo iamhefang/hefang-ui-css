@@ -2,7 +2,7 @@
 @import "variables";
 
 .#{$prefix}btn {
-  @include border-radius(5px);
+  @include border-radius($border-radius);
   @include box-sizing(border-box);
   @include transition(background .2s);
   border: none;
@@ -14,17 +14,17 @@
   cursor: pointer;
   outline-offset: -3px;
   margin: .1rem;
-  height: $input-height-default;
-  line-height: $input-height-default;
+  height: $input-height-default - 2px;
+  line-height: $input-height-default - 2px;
 
   &[data-size='small'] {
-    height: $input-height-small;
-    line-height: $input-height-small;
+    height: $input-height-small - 2px;
+    line-height: $input-height-small - 2px;
   }
 
   &[data-size='large'] {
-    height: $input-height-large;
-    line-height: $input-height-large;
+    height: $input-height-large - 2px;
+    line-height: $input-height-large - 2px;
   }
 
   &:focus {
